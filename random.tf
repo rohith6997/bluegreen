@@ -1,5 +1,5 @@
-#Create a random pet.
+# create a random pet
 resource "random_pet" "name" {
-  length    = 2
-  separator = "-"
+    length = 2
+    separator = "-"
 }

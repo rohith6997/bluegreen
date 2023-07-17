@@ -1,7 +1,9 @@
 provider "aws" {
-  region = "${var.aws_region}"
-}
-#Create random provider.
+  region = "${var.region}"
+} 
+
+# create provider random
 provider "random" {
-    version = "~> 3.5.1"
+  version = "3.5.1"
 }
+
