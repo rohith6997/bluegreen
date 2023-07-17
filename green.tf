@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# create a blue instance
-=======
 # create a green instance
->>>>>>> b755e344fbc9a69445edcd82d0bf1268677bed47
 
 resource "aws_instance" "green" {
   count = var.enable_green_env ? var.green_instance_count : 0
@@ -26,11 +22,7 @@ resource "aws_lb_target_group" "green" {
   protocol = "HTTP"
   vpc_id   = module.vpc.vpc_id
 
-<<<<<<< HEAD
-  health_check {
-=======
  health_check {
->>>>>>> b755e344fbc9a69445edcd82d0bf1268677bed47
     path                = "/healthcheck.html"
     port                = 80
     protocol            = "HTTP"

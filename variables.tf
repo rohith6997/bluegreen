@@ -55,45 +55,25 @@ variable "private_subnet_count" {
 
 # create a variable for count of blue instances
 variable "blue_instance_count" {
-<<<<<<< HEAD
-  description = "Number of green instances"
-=======
   description = "Number of blue instances"
->>>>>>> b755e344fbc9a69445edcd82d0bf1268677bed47
   type        = number
   default     = 3
 }
 
 # create a boolean variable for enabling blue environment
 variable "enable_blue_env" {
-<<<<<<< HEAD
-  description = "Enable green environment"
-=======
   description = "Enable blue environment"
->>>>>>> b755e344fbc9a69445edcd82d0bf1268677bed47
   type        = bool
   default     = true
 }
 
-<<<<<<< HEAD
-variable "green_instance_count" {
-  description = "Number of green instances"
-  type        = number
-  default     = 3
-}
-
-# create a boolean variable for enabling blue environment
-=======
 # create a boolean variable for enabling green environment
->>>>>>> b755e344fbc9a69445edcd82d0bf1268677bed47
 variable "enable_green_env" {
   description = "Enable green environment"
   type        = bool
   default     = true
 }
 
-<<<<<<< HEAD
-=======
 # create a variable for green instance count
 variable "green_instance_count" {
   description = "Number of green instances"
@@ -101,7 +81,6 @@ variable "green_instance_count" {
   default     = 6
 }
 
->>>>>>> b755e344fbc9a69445edcd82d0bf1268677bed47
 locals {
   traffic_dist_map = {
     blue = {
@@ -135,12 +114,9 @@ variable "traffic_distribution" {
 
 
 
-<<<<<<< HEAD
-=======
 
 
 
->>>>>>> b755e344fbc9a69445edcd82d0bf1268677bed47
 
 
 

@@ -22,11 +22,7 @@ resource "aws_lb_target_group" "blue" {
   protocol = "HTTP"
   vpc_id   = module.vpc.vpc_id
 
-<<<<<<< HEAD
-  health_check {
-=======
  health_check {
->>>>>>> b755e344fbc9a69445edcd82d0bf1268677bed47
     path                = "/healthcheck.html"
     port                = 80
     protocol            = "HTTP"
